@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "text": "ты потерял память. принять вызов НЛО?",
+      "answers": [
+        {
+          "nextQuestionId": 2,
+          "text": "принять"
+        },
+        {
+          "nextQuestionId": 3,
+          "text": "отклонить"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "ты принял вызов. поднимаешься на мостик к капитану?",
+      "answers": [
+        {
+          "nextQuestionId": 0,
+          "text": "подняться на мостик"
+        },
+        {
+          "nextQuestionId": 0,
+          "text": "отказаться"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "ты поехал домой",
+      "answers": [
+        {
+          "nextQuestionId": 0,
+          "text": "пока"
+        },
+        {
+          "nextQuestionId": 0,
+          "text": "привет"
+        }
+      ]
+    }
+  ]
