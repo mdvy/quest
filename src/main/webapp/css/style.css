@@ -1,5 +1,4 @@
 
-
 .start_form {
 
     float: left;
@@ -10,17 +9,16 @@
     font-weight: bold;
 
 }
-.question {
 
+.question {
     float: left;
     padding: 50px;
     width: 50%;
     color: #b7b7b7;
     font-weight: bold;
-
 }
-.questionContent {
 
+.questionContent {
     padding: 50px;
     color: #b7b7b7;
     font-weight: bold;
@@ -29,28 +27,25 @@
 }
 
 .answers {
-
     float: right;
     padding: 60px;
 
     width: 20%;
     color: #b7b7b7;
     font-weight: bold;
-
 }
+
 .mainText{
     color: #b7b7b7;
 }
 
 body {
     background: url(../img/mainPage.jpg) no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
-
-
 
 a.start {
     text-decoration: none;
@@ -68,9 +63,11 @@ a.start {
     height: 90px;
     line-height: 20px;
 }
+
 a.start:hover {
     font-size: 120px;
 }
+
 a.answer {
     text-decoration: none; color: brown;
     text-align: center;
@@ -85,8 +82,8 @@ a.answer {
     display: inline-block;
     height: 30px;
     line-height: 20px;
-
 }
+
 a.answer:hover {
     font-size: 30px;
 }

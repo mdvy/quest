@@ -19,15 +19,6 @@ public class InitServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         HttpSession currentSession = request.getSession(true);
 
-//        boolean exit = false;
-//        try{
-//            exit = Boolean.parseBoolean(request.getParameter("exit"));
-//        }catch (NullPointerException ignore){
-//        }
-//        if (exit){
-//            getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
-//        }
-
         String name = request.getParameter("name");
         if (name == null || name.isEmpty()) name = "Anonymous";
 
@@ -38,10 +29,10 @@ public class InitServlet extends HttpServlet {
         request.setAttribute("questionText", gameService.getQuestionTextById(1L));
         request.setAttribute("answers", gameService.getAnswersByQuestionId(1L));
         request.setAttribute("image", gameService.getImageByQuestionId(1L));
+        request.setAttribute("id", 1L);
 
         getServletContext().getRequestDispatcher("/quest.jsp").forward(request, response);
     }
 
-    public void destroy() {
-    }
+
 }

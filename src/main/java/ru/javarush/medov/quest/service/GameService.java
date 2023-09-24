@@ -4,8 +4,6 @@ import lombok.Data;
 import ru.javarush.medov.quest.entity.Answer;
 import ru.javarush.medov.quest.entity.Question;
 import ru.javarush.medov.quest.repository.QuestionRepository;
-
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 

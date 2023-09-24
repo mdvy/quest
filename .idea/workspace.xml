@@ -10,17 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d492cbe0-8adc-4608-a128-240bf988ee3a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/home.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/rescued.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/town.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/tree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/wake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/my.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/controller/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/controller/InitServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/controller/QuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/controller/QuestServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/entity/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/entity/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/repository/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/repository/QuestionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/service/GameService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/questions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
@@ -39,6 +39,7 @@
         <option value="Class" />
         <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -215,7 +216,7 @@
       <workItem from="1695323859841" duration="772000" />
       <workItem from="1695324642742" duration="9606000" />
       <workItem from="1695361926179" duration="2996000" />
-      <workItem from="1695402760076" duration="78314000" />
+      <workItem from="1695402760076" duration="87094000" />
     </task>
     <servers />
   </component>

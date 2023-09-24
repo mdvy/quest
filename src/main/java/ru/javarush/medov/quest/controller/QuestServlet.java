@@ -9,8 +9,6 @@ import jakarta.servlet.http.HttpSession;
 import ru.javarush.medov.quest.service.GameService;
 
 import java.io.IOException;
-import java.text.ParseException;
-
 @WebServlet(name = "questServlet", value = "/questServlet")
 public class QuestServlet extends HttpServlet {
     static final GameService gameService = new GameService();
@@ -18,13 +16,17 @@ public class QuestServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         HttpSession currentSession = request.getSession();
 
-        Long currentQuestionId = (Long) (currentSession.getAttribute("currentQuestionId"));
+
         Integer answerId = null;
+        Long currentQuestionId = null;
         try{
+            currentQuestionId = Long.parseLong(request.getParameter("id"));
             answerId = Integer.parseInt(request.getParameter("answerId"));
         }catch (NumberFormatException ignore){
         }
 
+        if (currentQuestionId == null)
+            currentQuestionId = (Long)currentSession.getAttribute("currentQuestionId");
 
         Long nextQuestionId;
         if (answerId == null){
@@ -32,20 +34,19 @@ public class QuestServlet extends HttpServlet {
         } else
             nextQuestionId = gameService.getNextQuestionIdByAnswer(currentQuestionId, answerId);
 
-        if (gameService.getQuestionById(nextQuestionId) == null) { //if not found in json
+        if (gameService.getQuestionById(nextQuestionId) == null) {
             request.setAttribute("idNotExists", true);
             getServletContext().getRequestDispatcher("/quest.jsp").forward(request, response);
         }
 
-
         if (gameService.getAnswersByQuestionId(nextQuestionId) == null) {
             currentSession.setAttribute("gameOver", true);
-        } else {
+        } else
             request.setAttribute("answers", gameService.getAnswersByQuestionId(nextQuestionId));
-        }
 
         request.setAttribute("questionText", gameService.getQuestionTextById(nextQuestionId));
         request.setAttribute("image", gameService.getImageByQuestionId(nextQuestionId));
+        request.setAttribute("id", nextQuestionId);
         currentSession.setAttribute("currentQuestionId", nextQuestionId);
 
         getServletContext().getRequestDispatcher("/quest.jsp").forward(request, response);
