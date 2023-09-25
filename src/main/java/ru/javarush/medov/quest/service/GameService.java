@@ -10,12 +10,7 @@ import java.util.Map;
 @Data
 public class GameService {
 
-
     private static final QuestionRepository repository = new QuestionRepository();
-
-    public Map<Long, Question> getAllQuestions(){
-        return repository.getQuestionMap();
-    }
 
     public Question getQuestionById(Long id){
             return repository.getQuestionMap().get(id);
@@ -25,9 +20,6 @@ public class GameService {
         return getQuestionById(id).getAnswers();
     }
 
-    public Question getNextQuestionByAnswer(Long id, int answerId){
-        return getQuestionById(getAnswersByQuestionId(id).get(answerId).getNextQuestionId());
-    }
 
     public String getQuestionTextById(Long id){
         return getQuestionById(id).getText();

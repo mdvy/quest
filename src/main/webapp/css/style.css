@@ -1,13 +1,11 @@
 
 .start_form {
-
     float: left;
     padding-left: 100px;
     padding-top: 150px;
     width: 40%;
     color: #b7b7b7;
     font-weight: bold;
-
 }
 
 .question {
@@ -92,4 +90,16 @@ a.answer:hover {
     right: 20px;
     bottom: 20px;
     position: absolute;
+}
+
+input.form-control:focus {
+    box-shadow: 0 0 5px 5px brown;
+    border-color: brown;
+}
+
+input.form-control {
+    font-weight: bold;
+    font-size: 30px;
+    width: 300px;
+    border-color: black;
 }

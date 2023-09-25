@@ -6,7 +6,6 @@
 <% if (request.getParameter("exit") != null ) request.getSession(true).invalidate(); %>
 <% if (request.getSession().getAttribute("name") != null ) response.sendRedirect("/questServlet"); %>
 
-
 <head>
 
     <meta charset="utf-8">
@@ -20,14 +19,17 @@
 
 </head>
 
-
 <body>
     <div class="start_form">
         <div class="questionContent">
-            <h1 style="font-size: 300%;">
-                Введите имя, чтобы <br><a class="start" href="javascript://" onclick="sendForm()">начать</a><br>квест...</h1>
                 <form id="myForm" action = "/init-servlet" method = "GET">
-                    <input style="font-weight: bold" class="form-control" type = "text" name = "name"/>
+                    <h1 style="font-size: 300%;">
+                        Введите имя
+                        <input class="form-control" type = "text" name = "name"/>
+
+                        <br>чтобы <br><a class="start" href="javascript://" onclick="sendForm()">начать</a><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;квест...
+                    </h1>
                     <br>
                 </form>
             </h1>

@@ -39,7 +39,6 @@ URL: http://localhost:8080/
         "imagePath": "/img/lose.jpg",
         "text": "ты отклонил вызов. Поражение!",
     },
-    
     {
     ...
     },
