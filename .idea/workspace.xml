@@ -9,15 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d492cbe0-8adc-4608-a128-240bf988ee3a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/controller/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/controller/InitServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/medov/quest/service/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="d492cbe0-8adc-4608-a128-240bf988ee3a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +23,7 @@
         <option value="Jsp File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -59,6 +52,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/Users/X/IdeaProjects/quest/src/main/webapp/img",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -83,6 +78,12 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\X\IdeaProjects\quest\src\main\webapp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.javarush.medov.quest.service" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.11">
@@ -207,7 +208,7 @@
       <workItem from="1695323859841" duration="772000" />
       <workItem from="1695324642742" duration="9606000" />
       <workItem from="1695361926179" duration="2996000" />
-      <workItem from="1695402760076" duration="95945000" />
+      <workItem from="1695402760076" duration="96722000" />
     </task>
     <servers />
   </component>
