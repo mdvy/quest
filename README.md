@@ -4,8 +4,9 @@
 ## Конфигурация Tomcat:
 version: 10.1.11
 
-URL: http://localhost:8080/
+Server -> URL: http://localhost:8080/
 
+Deployment -> Application context: "/"
 
 ## Шаблон .json файла:
 * *нумерация квестов начинается с 1, далее - в произвольном порядке*
