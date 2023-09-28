@@ -25,12 +25,13 @@
                 <form id="myForm" action = "/init-servlet" method = "GET">
                     <h1 style="font-size: 300%;">
                         Введите имя
-                        <input class="form-control" type = "text" name = "name"/>
+                        <input class="form-control" type = "text" pattern="[^<>]+" name = "name" required minlength="1" maxlength="20"/>
 
                         <br>чтобы <br><a class="start" href="javascript://" onclick="sendForm()">начать</a><br>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;квест...
                     </h1>
-                    <br>
+                    <button id="startButton" class="btn btn-primary" type="submit" hidden></button>
+
                 </form>
             </h1>
         </div>

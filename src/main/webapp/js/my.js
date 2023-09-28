@@ -26,6 +26,6 @@ $(window).load(function(){
 
 
 function sendForm(){
-    const myForm = document.getElementById('myForm');
-    myForm.submit();
+    const myForm = document.getElementById('startButton');
+    myForm.click();
 }

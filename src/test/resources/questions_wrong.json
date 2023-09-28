@@ -1,0 +1,21 @@
+[
+    {
+      "id": "ABC",
+      "text": "changed text",
+      "imagePath": "/img/mainPage.jpg",
+      "answers": [
+        {
+          "nextQuestionId": 2,
+          "text": "открыть дверь"
+        },
+        {
+          "nextQuestionId": 3,
+          "text": "осмотреть комнату"
+        },
+        {
+          "nextQuestionId": 7,
+          "text": "ущипнуть себя"
+        }
+      ]
+    }
+]

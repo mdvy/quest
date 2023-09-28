@@ -25,7 +25,7 @@
 
                 <c:if test = "${ requestScope.idNotExists == true }">
                     <h2> такой вариант еще не прописан в сценарии.</h2>
-                    <a class="start" href="/init-servlet?name=${name}">again</a><br>
+                    <div class="answerContent"><a class="answer" href="/init-servlet?name=${name}">again</a></div>>
                 </c:if>
 
                 <h1 class = "typing">${requestScope.questionText}</h1>
@@ -36,20 +36,28 @@
         <div class="answers">
         <c:forEach var="answer" items="${requestScope.answers}">
 
-            <div><a class="answer"  href="/questServlet?id=${id}&answerId=${answers.indexOf(answer)}">${answer.text}</a></div>
-            <br><br><br><hr>
+                <div class="answerContent"><a class="answer"  href="/questServlet?id=${id}&answerId=${answers.indexOf(answer)}">${answer.text}</a></div>
+                <br>
 
         </c:forEach>
 
         <c:if test = "${ gameOver == true }">
-            <a class="answer" href="/init-servlet?name=${name}">again</a><br>
+            <div class="answerContent"><a class="answer" href="/init-servlet?name=${name}">again</a></div>
         </c:if>
 
         </div>
     </div>
 
-    <div id = exit>
-        <a class="answer"  href="/index.jsp?exit=true">выйти</a>
+
+    <div id = "exit">
+        <div style="color: #b7b7b7; text-align: left">
+            имя: ${name}<br>
+            кол-во игр: ${gameCounter}<br>
+        </div>
+
+        <div>
+            <a class="answer"  href="/index.jsp?exit=true">выйти</a>
+        </div>
     </div>
 
 </body>
