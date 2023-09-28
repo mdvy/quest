@@ -33,7 +33,6 @@
                     <button id="startButton" class="btn btn-primary" type="submit" hidden></button>
 
                 </form>
-            </h1>
         </div>
     </div>
 </body>
