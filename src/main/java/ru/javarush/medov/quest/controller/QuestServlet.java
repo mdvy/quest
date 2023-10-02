@@ -12,6 +12,7 @@ import java.io.IOException;
 
 @WebServlet(name = "questServlet", value = "/questServlet")
 public class QuestServlet extends HttpServlet {
+
     static final GameService gameService = new GameService("questions.json");
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

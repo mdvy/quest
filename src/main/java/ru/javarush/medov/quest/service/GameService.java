@@ -35,6 +35,6 @@ public class GameService {
     }
 
     public String getImageByQuestionId(Long id) {
-        return getQuestionById(id).getImagePath();
+        return "/img/" + getQuestionById(id).getImagePath();
     }
 }

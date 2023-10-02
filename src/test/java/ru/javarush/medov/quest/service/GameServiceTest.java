@@ -28,7 +28,7 @@ class GameServiceTest {
         question.setId(1L);
         question.setAnswers(List.of(answer1, answer2, answer3));
         question.setText("ты проснулся в пустой темной комнате. Ты замечаешь приоткрытую дверь, откуда едва заметно пробивается поток бледного света.");
-        question.setImagePath("/img/mainPage.jpg");
+        question.setImagePath("mainPage.jpg");
     }
 
     @Test
@@ -76,7 +76,7 @@ class GameServiceTest {
 
     @Test
     public void shouldReturnImagePathByQuestionId() {
-        Assertions.assertEquals(question.getImagePath(), gameService.getImageByQuestionId(1L));
+        Assertions.assertEquals("/img/" + question.getImagePath(), gameService.getImageByQuestionId(1L));
     }
 
     @Test

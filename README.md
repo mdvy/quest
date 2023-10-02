@@ -1,48 +1,15 @@
-# Текстовый квест
+# Text Quest Project
 
 
-## Конфигурация Tomcat:
-version: 10.1.11
+## Tomcat configuration
+* version: 10.1.11
+* URL: http://localhost:8080/
+* Application context: '/'
 
-Server -> URL: http://localhost:8080/
+## Technologies
 
-Deployment -> Application context: "/"
-
-## Шаблон .json файла:
-* *нумерация квестов начинается с 1, далее - в произвольном порядке*
-
-* *поле nextQuestionId каждого ответа на вопрос должен ссылаться на следующий вопрос*
-
-* *вопросы без списка ответов - финальные*
-```
-[
-    {
-        "id": 1, 
-        "text": "ты потерял память. принять вызов НЛО?",
-        "imagePath": "/img/wood.jpg",
-        "answers":  
-            [
-                {
-                    "nextQuestionId": 5,
-                    "text": "принять"
-                },
-                {
-                    "nextQuestionId": 10,
-                    "text": "отклонить"
-                },
-                {
-                    "nextQuestionId": 1,
-                    "text": "что?"
-                }
-            ]
-    },{
-        "id": 10, 
-        "imagePath": "/img/lose.jpg",
-        "text": "ты отклонил вызов. Поражение!",
-    },
-    {
-    ...
-    },
-    ...
-]
-```
+* Java version: 11
+* jakarta.servlet-api version: 5.0.0
+* JUnit version: 5.9.2
+* Jackson version: 2.15.2
+* lombok version: 1.18.30

@@ -2,7 +2,7 @@
     {
       "id": "ABC",
       "text": "changed text",
-      "imagePath": "/img/mainPage.jpg",
+      "imagePath": "mainPage.jpg",
       "answers": [
         {
           "nextQuestionId": 2,
